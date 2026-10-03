@@ -61,6 +61,7 @@ jobs:
         --enable-decoder=h264,hevc,vvc,av1,aac,ac3,dca,eac3 \
         --enable-demuxer=h264,hevc,vvc,av1,aac,ac3,dca,eac3 \
         --enable-parser=h264,hevc,vvc,av1,aac,ac3,dca,eac3 \
+        --enable-protocols \
         --disable-decoder=libdav1d \
         --enable-d3d11va \
         --enable-d3d12va \
