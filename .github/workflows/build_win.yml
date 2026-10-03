@@ -35,7 +35,6 @@ jobs:
       run: mv /usr/bin/link.exe /usr/bin/link.exe.bak
         
     - name: Configure library
-      working-directory: ${{github.workspace}}/FFmpeg
       shell: msys2 {0}
       env:
         UPLOAD_FOLDER: ${{github.workspace}}\upload
@@ -73,12 +72,10 @@ jobs:
         --enable-debug
 
     - name: Build library
-      working-directory: ${{github.workspace}}/FFmpeg
       shell: msys2 {0}
       run: make
 
     - name: Install library
-      working-directory: ${{github.workspace}}/FFmpeg
       shell: msys2 {0}
       run: make install
       
