@@ -60,8 +60,7 @@ jobs:
         --enable-error-resilience \
         --enable-decoder=h264,hevc,vvc,av1,aac,ac3,dca,eac3 \
         --enable-demuxers \
-        --enable-parsers \
-        --enable-protocols \
+        --enable-parser=h264,hevc,vvc,av1,aac,ac3,dca,eac3 \
         --disable-decoder=libdav1d \
         --enable-d3d11va \
         --enable-d3d12va \
